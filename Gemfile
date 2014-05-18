@@ -7,6 +7,9 @@ gem 'rails', '4.0.3'
 gem 'mysql2'
 gem 'mysql'
 
+#paperclip for adding attachments
+gem "paperclip", "~> 2.3"
+
 #for user authentication 
 gem 'devise'
   
@@ -53,3 +56,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "mocha", group: :test

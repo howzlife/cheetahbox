@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :assets
+  
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -8,5 +10,5 @@ class User < ActiveRecord::Base
   attr_accessible :email, :name, :password, :password_confirmation, :remember_me
 
          
-    validates :email, :presence => true, :uniqueness => true
+  validates :email, :presence => true, :uniqueness => true
 end
