@@ -14,7 +14,7 @@ development:
   database: cheetahbox_development
   pool: 5
   username: root
-  password: Ilikepie69!
+  password: password
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   database: cheetahbox_test
   pool: 5
   username: root
-  password: Ilikepie69!
+  password: password
   host: localhost
 
 production:
@@ -35,5 +35,5 @@ production:
   database: cheetahbox_production
   pool: 5
   username: root
-  password: Ilikepie69!
+  password: password
   host: localhost
