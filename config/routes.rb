@@ -7,6 +7,8 @@ Cheetahbox::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root :to => "home#index"
 
+  #This is a route for our file downloads
+  match "assets/get/:id" => "assets#get", via: :get, :as => "download"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
